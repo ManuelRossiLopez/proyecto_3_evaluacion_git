@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #c0392b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #c0392b;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a93226;
+}
+
+a {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.mensaje {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.exito {
+    background: #d4edda;
+    color: #155724;
+}
+
+.titulo {
+    text-align: center;
+    margin: 30px;
+}
+
+.grid-perfiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.perfil-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.perfil-card h3 {
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #c0392b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.perfil-acciones {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-like {
+    background: #27ae60;
+}
+
+.btn-pasar {
+    background: #7f8c8d;
+}
+
+.toast {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #27ae60;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.toast.visible {
+    display: block;
+}
